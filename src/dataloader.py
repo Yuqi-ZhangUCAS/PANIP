@@ -8,10 +8,6 @@ import pandas as pd
 import h5py
 
 class ProteinDatasetDGL(torch.utils.data.Dataset):
-    """
-        The following code is improved based on JmcPPI. Paper link:
-        https://doi.org/10.48550/arXiv.2503.04650
-    """
     def __init__(self, prot_r_edge_path, prot_k_edge_path, prot_node_path, dataset):
 
         prot_r_edge = np.load(prot_r_edge_path, allow_pickle=True)
