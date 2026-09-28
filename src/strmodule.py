@@ -150,10 +150,7 @@ class GATDotConv(nn.Module):
                 return rst
 
 class ResiSC_Encoder(nn.Module):
-    """
-    The following code is improved based on JmcPPI. Paper link:
-    https://doi.org/10.48550/arXiv.2503.04650
-    """
+    
     def __init__(self, param, input_dim, data_loader):
         super(ResiSC_Encoder, self).__init__()
 
@@ -225,10 +222,7 @@ class ResiSC_Encoder(nn.Module):
 
 
 class ResiSC_Decoder(nn.Module):
-    """
-        The following code is improved based on JmcPPI. Paper link:
-        https://doi.org/10.48550/arXiv.2503.04650
-    """
+   
     def __init__(self, param, input_dim):
         super(ResiSC_Decoder, self).__init__()
         self.num_layers = param.resid_num_layers
@@ -278,10 +272,7 @@ class ResiSC_Decoder(nn.Module):
 
 
 class RecNet(nn.Module):
-    """
-    The following code is improved based on JmcPPI. Paper link:
-    https://doi.org/10.48550/arXiv.2503.04650
-    """
+   
     def __init__(self, param, data_loader):
         super(RecNet, self).__init__()
 
